@@ -1,6 +1,8 @@
 function iter_cs()
 
 clear all
+clc
+addpath('cpp')
 mkdir('result/result_cs')
 file = fopen( 'result/results_cs.txt', 'wt' );
 

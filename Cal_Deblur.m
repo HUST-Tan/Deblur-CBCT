@@ -1,4 +1,5 @@
 function [u] = Cal_Deblur(blur_image, kernel, noise, sigma1, sigma2, iternum)
+addpath('utilities')
 folderModel  = 'models';
 useGPU = false;
 % ---init---

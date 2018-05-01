@@ -1,6 +1,8 @@
 # Statistical Iterative CBCT Reconstruction Based on Neural Network
 
-This is an implementation of [our article]() on matlab, matconvnet. 
+This is an implementation of [our article](will give) on matlab, matconvnet. 
+
+<div align="center"> <img src="png/demo.png" width="1500"/> </div><br>
 
 The repository includes:
 
@@ -23,15 +25,7 @@ step1：clone the code
 git clone https://github.com/HUST-Shan/Deblur-CBCT.git
 ```
 
-step2：compile the c++ extension (for projection)
-
-```matlab
-mex cpp/updateu_method_cs.cpp
-```
-
-（You will find a compiled file `updatau_method_cs.mexa64` ）
-
-step3：run CS phantom demo
+step2：run CS phantom demo
 
 ```matlab
 iter_cs
@@ -41,10 +35,9 @@ iter_cs
 
 ## Some Explain
 
-1. If you run this code in windows, please change several "path form"
-2. This pre-trained model is coming from [IRCNN](https://github.com/cszn/IRCNN)：the denoise network is a little different to article, however, you can replace the denoise network with "any denoise network or methods"（we will release a trainable model in our python version）
-3. This demo only do deblur in one layer, not on whole objection.
-4.  We will release a python version soon（Contain training phase.）
+1. This pre-trained model is coming from [IRCNN](https://github.com/cszn/IRCNN)：the denoise network is a little different to article, however, you can replace the denoise network with "any denoise network or methods"（we will release a trainable model in our python version）
+2. This demo only do deblur in one layer, not on whole objection.
+3.  We will release a python version soon（Contain training phase.）
 
 ## Citation
 
