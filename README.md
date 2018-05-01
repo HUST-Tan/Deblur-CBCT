@@ -33,11 +33,11 @@ iter_cs
 
 （Note: 1. You can find the results in result folder.  2. We only do deblur in the middle layer, not on whole 3D phantom.）
 
-## Some Explain
+## Some Explainations
 
-1. This pre-trained model is coming from [IRCNN](https://github.com/cszn/IRCNN)：the denoise network is a little different to article, however, you can replace the denoise network with "any denoise network or methods"（we will release a trainable model in our python version）
+1. This pre-trained model is coming from [IRCNN](https://github.com/cszn/IRCNN)：the denoise network is a little different from our article, however, you can replace the denoise network with "any denoise network or methods"（we will release a trainable model in our python version）
 2. This demo only do deblur in one layer, not on whole objection.
-3.  We will release a python version soon（Contain training phase.）
+3.  We will release a python version soon（Containing training phase.）
 
 ## Citation
 
