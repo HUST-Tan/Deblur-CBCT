@@ -6,6 +6,9 @@ This is an implementation of [our article]() on matlab, matconvnet.
 
 The repository includes:
 
+- Dataset：CS phantom projection with $5e^3$ incident photon. 
+
+
 - 3D-Projection：based on [3D Forward and Back-Projection for X-Ray CT Using Separable Footprints](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2993760/)
 - Deblur procedure
 - CS Phantom demo
@@ -31,12 +34,12 @@ step2：run CS phantom demo
 iter_cs
 ```
 
-（Note: 1. You can find the results in result folder.  2. We only do deblur in the middle layer, not on whole 3D phantom.）
+（Note: 1. You can find the results in result folder.  2. the demo do deblur in middle layer, you can apply it in all the layer as well.）
 
 ## Some Explainations
 
 1. This pre-trained model is coming from [IRCNN](https://github.com/cszn/IRCNN)：the denoise network is a little different from our article, however, you can replace the denoise network with "any denoise network or methods"（we will release a trainable model in our python version）
-2. This demo only do deblur in one layer, not on whole objection.
+2. We will upload more simulation digital phantoms soon.
 3.  We will release a python version soon（Containing training phase.）
 
 ## Citation
