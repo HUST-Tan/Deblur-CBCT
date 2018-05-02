@@ -6,12 +6,15 @@ This is an implementation of [our article]() on matlab, matconvnet.
 
 The repository includes:
 
-- Dataset：CS phantom projection with $5e^3$ incident photon. 
+- data：this folder includes CS phantom projection with $5e^3$ incident photon and original CS phantom without noise. 
 
 
-- 3D-Projection：based on [3D Forward and Back-Projection for X-Ray CT Using Separable Footprints](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2993760/)
-- Deblur procedure
-- CS Phantom demo
+- cpp：this folder includes 3D-Projection process：based on [3D Forward and Back-Projection for X-Ray CT Using Separable Footprints](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2993760/)（compiled files --- `updateu_method_cs.mexa64` for linux and `updateu_method_cs.mexw64` for windows）
+- models：this folder includes trained model
+- eval：this folder includes PSNR, SSIM, ISNR functions（our paper use this version evaluation）
+- utilities：this folder includes extra functions（e.g. load trained model function）
+- Cal_Deblur.m：deblur functions（wrap the denoise phase）
+- iter_cs.m：demo of CS Phantom 
 
 ## Preparation
 
@@ -26,6 +29,7 @@ step1：clone the code
 
 ```shell
 git clone https://github.com/HUST-Shan/Deblur-CBCT.git
+cd Deblur-CBCT
 ```
 
 step2：run CS phantom demo
